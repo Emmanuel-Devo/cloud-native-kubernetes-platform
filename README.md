@@ -27,3 +27,23 @@ web-app-service
   v                 v
 Web App Pod      Web App Pod
   NGINX             NGINX
+
+
+
+## Proof of Deployment
+
+### Running Application
+
+![Running Kubernetes Application](screenshots/Running%20Kubernetes%20Application.png)
+
+### Kubernetes Pods
+
+![Kubernetes Pods Running](screenshots/Kubernetes%20Pods%20Running.png)
+
+### Horizontal Pod Autoscaling
+
+![Kubernetes HPA](screenshots/Kubernetes%20HPA.png)
+
+### GitHub Actions CI
+
+![GitHub Actions CI Success](screenshots/GitHub%20Actions%20CI%20Success.png)
