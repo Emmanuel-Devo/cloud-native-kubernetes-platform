@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud & DevOps Kubernetes Platform</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            border-radius: 16px;
+            padding: 45px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            color: #6b7280;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 22px;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        .status {
+            margin-top: 30px;
+            padding: 18px;
+            background: #f8fafc;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <span class="badge">● Kubernetes Application Running</span>
+
+        <h1>Cloud & DevOps Platform</h1>
+
+        <p class="intro">
+            A containerized web application deployed on Kubernetes using
+            Docker, Kind, Kubernetes Services, and automated CI validation.
+        </p>
+
+        <section class="grid">
+
+            <div class="card">
+                <h2>Docker</h2>
+                <p>
+                    The application is packaged as a lightweight NGINX
+                    container image.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Kubernetes</h2>
+                <p>
+                    The application runs as multiple replicas inside a
+                    Kubernetes cluster.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Service</h2>
+                <p>
+                    Kubernetes Service provides stable internal networking
+                    for the application pods.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>CI Validation</h2>
+                <p>
+                    GitHub Actions validates Kubernetes manifests and builds
+                    the Docker image.
+                </p>
+            </div>
+
+        </section>
+
+        <div class="status">
+            Application Status: Running
+        </div>
+
+        <footer>
+            Cloud-Native Kubernetes Platform · DevOps Portfolio Project
+        </footer>
+
+    </main>
+
+</body>
+</html>

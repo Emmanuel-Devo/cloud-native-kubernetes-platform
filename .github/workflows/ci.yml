@@ -1,0 +1,25 @@
+name: Kubernetes CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate Kubernetes manifests
+        uses: instrumenta/kubeval-action@master
+        with:
+          files: kubernetes
+
+      - name: Build Docker image
+        run: |
+          docker build -t web-app:${{ github.sha }} ./app
